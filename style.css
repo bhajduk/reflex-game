@@ -1,0 +1,70 @@
+body
+{
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+}
+
+#gameMain
+{
+    background-color: rgb(53, 53, 53);
+    height: 800px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#circle
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#circle:first-child
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(370px, 370px);
+    transition: none;
+}
+
+.sum
+{
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#start
+{
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#retry
+{
+    color: black;
+    font-size: 21px;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0, 370px);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#retry:hover
+{
+    background-color: white;
+}
+
