@@ -1,20 +1,20 @@
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-        currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-}
+let counter = 0;
+let i = 10;
+let gameBoardWidth = document.querySelector('#gameMain').clientWidth;
+let gameBoardHeight = document.querySelector('#gameMain').clientHeight;
+
+window.addEventListener('resize', () => {
+    gameBoardWidth = document.querySelector('#gameMain').clientWidth;
+    gameBoardHeight = document.querySelector('#gameMain').clientHeight;
+});
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
+    console.log(gameBoardWidth);
+    console.log(gameBoardHeight);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-let counter = 0;
-
-let i = 10;
 
 function backgroundHit() {
     counter--;
@@ -22,8 +22,8 @@ function backgroundHit() {
 }
 
 function randomShow() {
-    let x = getRandomIntInclusive(-500, 500);
-    let y = getRandomIntInclusive(-500, 500);
+    let x = getRandomIntInclusive(-gameBoardWidth / 2, gameBoardWidth / 2);
+    let y = getRandomIntInclusive(-gameBoardHeight / 2, gameBoardHeight / 2);
 
     if (i < 3) document.getElementById('circle').style.backgroundColor = 'red';
 
