@@ -25,10 +25,10 @@ function randomShow() {
     let x = getRandomIntInclusive(-gameBoardWidth / 2, gameBoardWidth / 2);
     let y = getRandomIntInclusive(-gameBoardHeight / 2, gameBoardHeight / 2);
 
-    if (i < 3) document.getElementById('circle').style.backgroundColor = 'red';
+    if (i < 3) document.getElementById('circle').style.borderColor = 'red';
 
     document.getElementById('gameMain').style.backgroundColor =
-        'rgb(53, 53, 53)';
+        'rgb(151, 190, 190);';
 
     document.getElementById('circle').innerHTML = '';
 
@@ -41,7 +41,7 @@ function timer() {
     document.getElementById('time').innerHTML = `time: ${i}`;
     i--;
 
-    if (i < 3) document.getElementById('time').style.color = 'red';
+    if (i < 3) document.getElementById('time').style.borderColor = 'red';
 
     if (i < -1) {
         document.getElementById('personalBest').innerHTML = 'score: ' + counter;
