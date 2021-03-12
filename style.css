@@ -1,15 +1,39 @@
-body {
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
     background-color: black;
-    font-family: Helvetica, sans-serif;
+}
+
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(184, 154, 161);
+    display: flex;
 }
 
 #gameMain {
-    background-color: rgb(53, 53, 53);
-    height: 800px;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    background-color: darkcyan;
+    flex: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightPane {
+    background-color: rgb(46, 114, 91);
+    flex: 20%;
 }
 
 #circle {
@@ -17,15 +41,21 @@ body {
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
+    color: white;
 }
 
 #circle:first-child {
-    background-color: white;
+    background-color: transparent;
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(370px, 370px);
     transition: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sum {
@@ -36,9 +66,26 @@ body {
 }
 
 #start {
-    padding: 25px;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
     font-weight: 700;
+    border-radius: 50%;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2),
+        0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s ease;
+}
+
+#start:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2),
+        0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 #retry {

@@ -22,8 +22,8 @@ function backgroundHit() {
 }
 
 function randomShow() {
-    let x = getRandomIntInclusive(0, 730);
-    let y = getRandomIntInclusive(0, 730);
+    let x = getRandomIntInclusive(-500, 500);
+    let y = getRandomIntInclusive(-500, 500);
 
     if (i < 3) document.getElementById('circle').style.backgroundColor = 'red';
 

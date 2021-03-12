@@ -6,18 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="js/main.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <div id="gameMain" onclick="backgroundHit()">
-            <div id="circle" onclick="event.stopPropagation(); randomShow()">
-                <div id="start" onclick="timer()">start</div>
+        <div id="container">
+            <div id="gameContainer">
+                <div id="gameMain" onclick="backgroundHit()">
+                    <div
+                        id="circle"
+                        onclick="event.stopPropagation(); randomShow()"
+                    >
+                        <div id="start" onclick="timer()">start</div>
+                    </div>
+                </div>
+
+                <div id="rightPane">
+                    <div id="summary">
+                        <div class="sum" id="time">time: 10</div>
+                        <div class="sum" id="personalBest">score:</div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div id="summary">
-            <div class="sum" id="time">time: 10</div>
-            <div class="sum" id="personalBest">score:</div>
-        </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
