@@ -33,7 +33,7 @@ const randomShow = () => {
         gameBoardHeight / 2 - 70
     );
 
-    if (i < 3) document.querySelector('#circle').style.borderColor = 'red';
+    if (i < 3) document.querySelector('#circle').style.borderColor = '#E53935';
 
     document.querySelector('#circle').innerHTML = '';
 
@@ -43,14 +43,13 @@ const randomShow = () => {
 
     document.querySelector('#gameMain').style.backgroundColor =
         'rgb(151, 190, 190)';
-    console.log('klik');
 };
 
 const timer = () => {
     document.querySelector('#time').innerHTML = `time: ${i}`;
     i--;
 
-    if (i < 3) document.querySelector('.sum#time').style.color = 'red';
+    if (i < 3) document.querySelector('.sum#time').style.color = '#E53935';
 
     if (i < -1) {
         document.querySelector('#personalBest').innerHTML = 'score: ' + counter;

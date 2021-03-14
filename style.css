@@ -103,6 +103,8 @@
     padding: 10px;
     cursor: pointer;
     transition: 0.5s ease;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 #retry:hover {
