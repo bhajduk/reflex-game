@@ -58,6 +58,10 @@
     justify-content: center;
 }
 
+#summary {
+    margin-top: 50px;
+}
+
 .sum {
     color: white;
     font-size: 21px;
@@ -89,20 +93,20 @@
 }
 
 #retry {
-    color: black;
+    color: rgb(46, 114, 91);
+    border-radius: 50%;
     font-size: 21px;
     text-align: center;
     background-color: rgb(230, 230, 230);
     width: 200px;
-    height: 30px;
+    height: 200px;
     padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(0, 370px);
     cursor: pointer;
     transition: 0.5s ease;
 }
 
 #retry:hover {
     background-color: white;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2),
+        0 6px 30px 0 rgba(0, 0, 0, 0.19);
 }
